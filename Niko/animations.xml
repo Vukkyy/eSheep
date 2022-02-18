@@ -36,10 +36,10 @@
       <interval>150</interval>
     </end>
     <sequence repeat="20" repeatfrom="0">
+      <frame>4</frame>
       <frame>5</frame>
       <frame>6</frame>
       <frame>7</frame>
-      <frame>8</frame>
       <next probability="100">1</next>
     </sequence>
 </animation>
