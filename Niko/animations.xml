@@ -16,11 +16,22 @@
 <transparency>Magenta</transparency>
 </image>
 <spawns>
-    <spawn id="1" probability="100">
-    <x>screenW+10</x>
-    <y>areaH-imageH</y>
-    <next probability="100">1</next>
+    <spawn id="1" probability="50">
+        <x>screenW+10</x>
+        <y>areaH-imageH</y>
+        <next probability="25">1</next>
+        <next probability="25">2</next>
+        <next probability="25">3</next>
+        <next probability="25">4</next>
     </spawn>    
+    <spawn id="2" probability="50">
+        <x>random*(screenW-imageW-50)/100+25</x>
+        <y>-imageH-20</y>
+        <next probability="25">1</next>
+        <next probability="25">2</next>
+        <next probability="25">3</next>
+        <next probability="25">4</next>
+    </spawn>
 </spawns>
 <animations>
 <animation id="1">
