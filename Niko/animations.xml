@@ -4,7 +4,7 @@
 <author>Vukky</author>
 <title>Niko</title>
 <petname>Niko</petname>
-<version>0.1</version>
+<version>0.2</version>
 <info>Not a cat![br]From [link:http://oneshot-game.com]</info>
 <application>1</application>
 <icon><![CDATA[iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAilBMVEUAAAC/amplLC2GQ0ObVlaZUVF8Pz+qXFylWVlNMWBIRo5ISZWeUFBkOE9oOVFgPWL/zAD///8mGDCNXTzEiIhIRIs6Jkj/5Rn//zNORoihanO+g4Q7JkmkYYKGLVlIScimN2/u2eS4aX4hHz+Yb49DRLuoaGuEQEcwHjxISahYMUNSL0M+PqU4GBk/3kqsAAAAAXRSTlMAQObYZgAAAg9JREFUeAHt1oV64zoUReEwM7PK3Pd/vevjJF5WjTeeHpXW8Djefz+5VPpYOVTlwsIbLoEC4+pA8QNi/jsD1WqZ1AHmqcDxfCuA+e8JMO8aYJ6Kz38VoJxRrfb1AKrXG5mVySlQtmo2W63G/+yrAI2CuQQa/zB9oPEJaQGNT+37AnQJ8Ae0C+UKKJWOlzudrlXPi38l/V8c1O9rAceOQHRKivs//j+NKpETYOCXAOREdAGbGA4Hg9FIiHhgEJRAOAcGg7FfeALgjI+8ogfJ/FcFuCbAkfgawGTCi7h1Og3fPvOyASn8ivlcF1j4HQn5HWC5XK0EkNtnMwAOJh6QaX0A5kysJB+QP2deNsC1YxDMy+9aACUDkgBMhoH1GoA0AMkm5L8jACUAzGsDBCAdhwA2G4ivCBAAhyF/327TAD4Qk8f1geRAeAOi85OJLsBD3u0A8gdgpwXYn/Cih7TfH06lA8Yc7zVemgDzPGabkOkrv+vrm5sk4NYLQpI9PYC/84DOt19Zxc8LIJ3v1gOIw+IB3d1BxM/LKPM8XrlfG+BRny/f3xs/YaI9PDx6HYHzuAThBpC/PT0dL5pQt0GPdAKen40dhDrAN8Mf5+nlJTxuEtIH7JLmOaTXV8bjcwsYArAyOXIHmNTe3kzOWNQGQIrEljZAxeddAVSpmIuqVN7fvwJQ8bpsXnILFJ+XFID/AL9TnxivbPanAAAAAElFTkSuQmCC]]></icon>
@@ -19,23 +19,139 @@
     <spawn id="1" probability="50">
         <x>screenW+10</x>
         <y>areaH-imageH</y>
-        <next probability="25">1</next>
-        <next probability="25">2</next>
-        <next probability="25">3</next>
-        <next probability="25">4</next>
+        <next probability="12.5">1</next>
+        <next probability="12.5">2</next>
+        <next probability="12.5">3</next>
+        <next probability="12.5">4</next>
+        <next probability="12.5">5</next>
+        <next probability="12.5">6</next>
+        <next probability="12.5">7</next>
+        <next probability="12.5">8</next>
     </spawn>    
     <spawn id="2" probability="50">
         <x>random*(screenW-imageW-50)/100+25</x>
         <y>-imageH-20</y>
-        <next probability="25">1</next>
-        <next probability="25">2</next>
-        <next probability="25">3</next>
-        <next probability="25">4</next>
+        <next probability="12.5">1</next>
+        <next probability="12.5">2</next>
+        <next probability="12.5">3</next>
+        <next probability="12.5">4</next>
+        <next probability="12.5">5</next>
+        <next probability="12.5">6</next>
+        <next probability="12.5">7</next>
+        <next probability="12.5">8</next>
     </spawn>
 </spawns>
 <animations>
 <animation id="1">
     <name>walkleft</name>
+    <start>
+      <x>-4</x>
+      <y>0</y>
+      <interval>150</interval>
+    </start>
+    <end>
+      <x>-4</x>
+      <y>0</y>
+      <interval>150</interval>
+    </end>
+    <sequence repeat="20" repeatfrom="0">
+      <frame>4</frame>
+      <frame>5</frame>
+      <frame>6</frame>
+      <frame>7</frame>
+      <next probability="12.5">1</next>
+      <next probability="12.5">2</next>
+      <next probability="12.5">3</next>
+      <next probability="12.5">4</next>
+      <next probability="12.5">5</next>
+      <next probability="12.5">6</next>
+      <next probability="12.5">7</next>
+      <next probability="12.5">8</next>
+    </sequence>
+</animation>
+<animation id="2">
+    <name>walkright</name>
+    <start>
+      <x>4</x>
+      <y>0</y>
+      <interval>150</interval>
+    </start>
+    <end>
+      <x>4</x>
+      <y>0</y>
+      <interval>150</interval>
+    </end>
+    <sequence repeat="20" repeatfrom="0">
+      <frame>8</frame>
+      <frame>9</frame>
+      <frame>10</frame>
+      <frame>11</frame>
+      <next probability="12.5">1</next>
+      <next probability="12.5">2</next>
+      <next probability="12.5">3</next>
+      <next probability="12.5">4</next>
+      <next probability="12.5">5</next>
+      <next probability="12.5">6</next>
+      <next probability="12.5">7</next>
+      <next probability="12.5">8</next>
+    </sequence>
+</animation>
+<animation id="3">
+    <name>walkup</name>
+    <start>
+      <x>0</x>
+      <y>-4</y>
+      <interval>150</interval>
+    </start>
+    <end>
+      <x>0</x>
+      <y>-4</y>
+      <interval>150</interval>
+    </end>
+    <sequence repeat="20" repeatfrom="0">
+      <frame>12</frame>
+      <frame>13</frame>
+      <frame>14</frame>
+      <frame>15</frame>
+      <next probability="12.5">1</next>
+      <next probability="12.5">2</next>
+      <next probability="12.5">3</next>
+      <next probability="12.5">4</next>
+      <next probability="12.5">5</next>
+      <next probability="12.5">6</next>
+      <next probability="12.5">7</next>
+      <next probability="12.5">8</next>
+    </sequence>
+</animation>
+<animation id="4">
+    <name>walkdown</name>
+    <start>
+      <x>0</x>
+      <y>4</y>
+      <interval>150</interval>
+    </start>
+    <end>
+      <x>0</x>
+      <y>4</y>
+      <interval>150</interval>
+    </end>
+    <sequence repeat="20" repeatfrom="0">
+      <frame>0</frame>
+      <frame>1</frame>
+      <frame>2</frame>
+      <frame>3</frame>
+      <next probability="12.5">1</next>
+      <next probability="12.5">2</next>
+      <next probability="12.5">3</next>
+      <next probability="12.5">4</next>
+      <next probability="12.5">5</next>
+      <next probability="12.5">6</next>
+      <next probability="12.5">7</next>
+      <next probability="12.5">8</next>
+    </sequence>
+</animation>
+<animation id="5">
+    <name>runleft</name>
     <start>
       <x>-4</x>
       <y>0</y>
@@ -51,14 +167,18 @@
       <frame>5</frame>
       <frame>6</frame>
       <frame>7</frame>
-      <next probability="25">1</next>
-      <next probability="25">2</next>
-      <next probability="25">3</next>
-      <next probability="25">4</next>
+      <next probability="12.5">1</next>
+      <next probability="12.5">2</next>
+      <next probability="12.5">3</next>
+      <next probability="12.5">4</next>
+      <next probability="12.5">5</next>
+      <next probability="12.5">6</next>
+      <next probability="12.5">7</next>
+      <next probability="12.5">8</next>
     </sequence>
 </animation>
-<animation id="2">
-    <name>walkright</name>
+<animation id="6">
+    <name>runright</name>
     <start>
       <x>4</x>
       <y>0</y>
@@ -74,14 +194,18 @@
       <frame>9</frame>
       <frame>10</frame>
       <frame>11</frame>
-      <next probability="25">1</next>
-      <next probability="25">2</next>
-      <next probability="25">3</next>
-      <next probability="25">4</next>
+      <next probability="12.5">1</next>
+      <next probability="12.5">2</next>
+      <next probability="12.5">3</next>
+      <next probability="12.5">4</next>
+      <next probability="12.5">5</next>
+      <next probability="12.5">6</next>
+      <next probability="12.5">7</next>
+      <next probability="12.5">8</next>
     </sequence>
 </animation>
-<animation id="3">
-    <name>walkup</name>
+<animation id="7">
+    <name>runup</name>
     <start>
       <x>0</x>
       <y>-4</y>
@@ -97,14 +221,18 @@
       <frame>13</frame>
       <frame>14</frame>
       <frame>15</frame>
-      <next probability="25">1</next>
-      <next probability="25">2</next>
-      <next probability="25">3</next>
-      <next probability="25">4</next>
+      <next probability="12.5">1</next>
+      <next probability="12.5">2</next>
+      <next probability="12.5">3</next>
+      <next probability="12.5">4</next>
+      <next probability="12.5">5</next>
+      <next probability="12.5">6</next>
+      <next probability="12.5">7</next>
+      <next probability="12.5">8</next>
     </sequence>
 </animation>
-<animation id="4">
-    <name>walkdown</name>
+<animation id="8">
+    <name>rundown</name>
     <start>
       <x>0</x>
       <y>4</y>
@@ -120,10 +248,14 @@
       <frame>1</frame>
       <frame>2</frame>
       <frame>3</frame>
-      <next probability="25">1</next>
-      <next probability="25">2</next>
-      <next probability="25">3</next>
-      <next probability="25">4</next>
+      <next probability="12.5">1</next>
+      <next probability="12.5">2</next>
+      <next probability="12.5">3</next>
+      <next probability="12.5">4</next>
+      <next probability="12.5">5</next>
+      <next probability="12.5">6</next>
+      <next probability="12.5">7</next>
+      <next probability="12.5">8</next>
     </sequence>
 </animation>
 </animations>
