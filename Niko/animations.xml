@@ -40,8 +40,10 @@
       <frame>5</frame>
       <frame>6</frame>
       <frame>7</frame>
-      <next probability="50">1</next>
-      <next probability="50">2</next>
+      <next probability="25">1</next>
+      <next probability="25">2</next>
+      <next probability="25">3</next>
+      <next probability="25">4</next>
     </sequence>
 </animation>
 <animation id="2">
@@ -61,8 +63,56 @@
       <frame>9</frame>
       <frame>10</frame>
       <frame>11</frame>
-      <next probability="50">1</next>
-      <next probability="50">2</next>
+      <next probability="25">1</next>
+      <next probability="25">2</next>
+      <next probability="25">3</next>
+      <next probability="25">4</next>
+    </sequence>
+</animation>
+<animation id="3">
+    <name>walkup</name>
+    <start>
+      <x>0</x>
+      <y>-4</y>
+      <interval>150</interval>
+    </start>
+    <end>
+      <x>0</x>
+      <y>-4</y>
+      <interval>150</interval>
+    </end>
+    <sequence repeat="20" repeatfrom="0">
+      <frame>12</frame>
+      <frame>13</frame>
+      <frame>14</frame>
+      <frame>15</frame>
+      <next probability="25">1</next>
+      <next probability="25">2</next>
+      <next probability="25">3</next>
+      <next probability="25">4</next>
+    </sequence>
+</animation>
+<animation id="4">
+    <name>walkdown</name>
+    <start>
+      <x>0</x>
+      <y>4</y>
+      <interval>150</interval>
+    </start>
+    <end>
+      <x>0</x>
+      <y>4</y>
+      <interval>150</interval>
+    </end>
+    <sequence repeat="20" repeatfrom="0">
+      <frame>0</frame>
+      <frame>1</frame>
+      <frame>2</frame>
+      <frame>3</frame>
+      <next probability="25">1</next>
+      <next probability="25">2</next>
+      <next probability="25">3</next>
+      <next probability="25">4</next>
     </sequence>
 </animation>
 </animations>
