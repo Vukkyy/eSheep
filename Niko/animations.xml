@@ -37,7 +37,7 @@
     </end>
     <sequence repeat="20" repeatfrom="0">
       <frame>2</frame>
-      <frame>3</frame
+      <frame>3</frame>
       <next probability="100">1</next>
     </sequence>
 </animation>
