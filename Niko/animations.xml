@@ -37,16 +37,9 @@
     </end>
     <sequence repeat="20" repeatfrom="0">
       <frame>2</frame>
-      <frame>3</frame>
-      <next probability="10" onlytaskbar="true">7</next>
-      <next probability="90">1</next>
+      <frame>3</frame
+      <next probability="100">1</next>
     </sequence>
-    <border>
-      <next probability="100">2</next>
-    </border>
-    <gravity>
-      <next probability="100">5</next>
-    </gravity>
 </animation>
 </animations>
 <childs></childs>
