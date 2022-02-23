@@ -4,7 +4,7 @@
 <author>Vukky</author>
 <title>Niko</title>
 <petname>Niko</petname>
-<version>0.4</version>
+<version>0.5</version>
 <info>Not a cat![br]From [link:http://oneshot-game.com]</info>
 <application>1</application>
 <icon><![CDATA[iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAilBMVEUAAAC/amplLC2GQ0ObVlaZUVF8Pz+qXFylWVlNMWBIRo5ISZWeUFBkOE9oOVFgPWL/zAD///8mGDCNXTzEiIhIRIs6Jkj/5Rn//zNORoihanO+g4Q7JkmkYYKGLVlIScimN2/u2eS4aX4hHz+Yb49DRLuoaGuEQEcwHjxISahYMUNSL0M+PqU4GBk/3kqsAAAAAXRSTlMAQObYZgAAAg9JREFUeAHt1oV64zoUReEwM7PK3Pd/vevjJF5WjTeeHpXW8Djefz+5VPpYOVTlwsIbLoEC4+pA8QNi/jsD1WqZ1AHmqcDxfCuA+e8JMO8aYJ6Kz38VoJxRrfb1AKrXG5mVySlQtmo2W63G/+yrAI2CuQQa/zB9oPEJaQGNT+37AnQJ8Ae0C+UKKJWOlzudrlXPi38l/V8c1O9rAceOQHRKivs//j+NKpETYOCXAOREdAGbGA4Hg9FIiHhgEJRAOAcGg7FfeALgjI+8ogfJ/FcFuCbAkfgawGTCi7h1Og3fPvOyASn8ivlcF1j4HQn5HWC5XK0EkNtnMwAOJh6QaX0A5kysJB+QP2deNsC1YxDMy+9aACUDkgBMhoH1GoA0AMkm5L8jACUAzGsDBCAdhwA2G4ivCBAAhyF/327TAD4Qk8f1geRAeAOi85OJLsBD3u0A8gdgpwXYn/Cih7TfH06lA8Yc7zVemgDzPGabkOkrv+vrm5sk4NYLQpI9PYC/84DOt19Zxc8LIJ3v1gOIw+IB3d1BxM/LKPM8XrlfG+BRny/f3xs/YaI9PDx6HYHzuAThBpC/PT0dL5pQt0GPdAKen40dhDrAN8Mf5+nlJTxuEtIH7JLmOaTXV8bjcwsYArAyOXIHmNTe3kzOWNQGQIrEljZAxeddAVSpmIuqVN7fvwJQ8bpsXnILFJ+XFID/AL9TnxivbPanAAAAAElFTkSuQmCC]]></icon>
@@ -19,32 +19,18 @@
     <spawn id="1" probability="33.3">
         <x>screenW+10</x>
         <y>areaH-imageH</y>
-        <next probability="12.5">1</next>
-        <next probability="12.5">2</next>
-        <next probability="12.5">3</next>
-        <next probability="12.5">4</next>
-        <next probability="12.5">5</next>
-        <next probability="12.5">6</next>
-        <next probability="12.5">7</next>
-        <next probability="12.5">8</next>
+        <next probability="50">1</next>
+        <next probability="50">5</next>
     </spawn>    
     <spawn id="2" probability="33.3">
         <x>random*(screenW-imageW-50)/100+25</x>
         <y>-imageH-20</y>
-        <next probability="16.6">1</next>
-        <next probability="16.6">2</next>
-        <next probability="16.6">4</next>
-        <next probability="16.6">5</next>
-        <next probability="16.6">6</next>
-        <next probability="16.6">8</next>
+        <next probability="100">8</next>
     </spawn>
     <spawn id="3" probability="33.3">
         <x>random*(screenW-imageW-50)/100+25</x>
         <y>-imageH-20</y>
-        <next probability="25">9</next>
-        <next probability="25">10</next>
-        <next probability="25">11</next>
-        <next probability="25">12</next>
+        <next probability="100">12</next>
     </spawn>
 </spawns>
 <animations>
